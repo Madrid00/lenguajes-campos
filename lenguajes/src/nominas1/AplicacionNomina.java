@@ -14,14 +14,14 @@ public class AplicacionNomina {
     public static void main(String[] args) {
         
         Trabajador worker = new Trabajador();
-        worker.nombre="Pedro";
-        worker.Paterno="López";
-        worker.Seguro=90;
+        worker.setNombre("Pedro");
+        worker.setPaterno("López");
+        worker.setSeguro(90);
         
-        if (worker.Seguro <=99) worker.Seguro = 100;
+        if (worker.getSeguro() <=99) worker.setSeguro(100);
         
         
-        System.out.println("El nombre es: " + worker.nombre  + " " +  worker.Paterno + " y el numero social es: " + worker.Seguro);
+        System.out.println("El nombre es: " + worker.getNombre()  + " " +  worker.getPaterno() + " y el numero social es: " + worker.getSeguro());
         
         
         
