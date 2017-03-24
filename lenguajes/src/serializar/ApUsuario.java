@@ -379,7 +379,7 @@ public class ApUsuario extends javax.swing.JFrame {
        try{
             
             PersistenciaUsuario p=new PersistenciaUsuario();
-            Usuario encontrado=p.busarPorNombre(textoNombreBuscar.getText());
+            Usuario encontrado=p.buscar(textoNombreBuscar.getText());
            tablaUsuarios.setValueAt(encontrado.getNombre(), 0, 0);
            tablaUsuarios.setValueAt(encontrado.getEmail(), 0, 1);
            tablaUsuarios.setValueAt(encontrado.getEdad(), 0, 2);
